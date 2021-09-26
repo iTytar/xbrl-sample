@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+    xmlns="http://www.xbrl.org/2003/instance"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+    xsi:schemaLocation="http://www.xbrl.org/2003/instance
+                      http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"
+    xmlns:s="http://www.sample.com/2021-09-26">
+    <link:schemaRef
+        xlink:type="simple"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" 
+        xlink:href="sample-2021-09-26.xsd" />
+    <unit id="u_person">
+        <measure>Person</measure>
+    </unit>
+    <context id="c_start">
+        <entity>
+            <identifier scheme="http://www.statistics.org">12-34567</identifier>
+        </entity>
+        <period>
+            <instant>2016-01-01</instant>
+        </period>
+    </context>
+    <context id="c_end">
+        <entity>
+            <identifier scheme="http://www.statistics.org">12-34567</identifier>
+        </entity>
+        <period>
+            <instant>2016-12-31</instant>
+        </period>
+    </context>
+    <s:nr_employees_total
+        contextRef="c_start"
+        unitRef="u_person"
+        decimals="0">35</s:nr_employees_total>
+    <s:nr_employees_total
+        contextRef="c_end"
+        unitRef="u_person"
+        decimals="0">41</s:nr_employees_total>
+
+    <!-- Пол -->
+    <s:nr_employees_male
+        contextRef="c_start"
+        unitRef="u_person"
+        decimals="0">23</s:nr_employees_male>
+    <s:nr_employees_male
+        contextRef="c_end"
+        unitRef="u_person"
+        decimals="0">27</s:nr_employees_male>
+    <s:nr_employees_female
+        contextRef="c_start"
+        unitRef="u_person"
+        decimals="0">12</s:nr_employees_female>
+    <s:nr_employees_female
+        contextRef="c_end"
+        unitRef="u_person"
+        decimals="0">15</s:nr_employees_female>
+</xbrl>

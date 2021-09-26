@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance"
+    xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+>
+    <presentationLink
+        xlink:type="extended"
+        xlink:role="http://www.xbrl.org/2003/role/link">
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_total"
+            xlink:label="concept_nr_employees_total" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_male"
+            xlink:label="concept_nr_employees_male" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_female"
+            xlink:label="concept_nr_employees_female" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_presentation_root"
+            xlink:label="concept_presentation_root" />
+        <presentationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="concept_presentation_root"
+            xlink:to="concept_nr_employees_total"
+            order="1" priority="0" use="optional"
+            preferredLabel="http://www.xbrl.org/2003/role/label" 
+        />
+        <presentationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="concept_presentation_root"
+            xlink:to="concept_nr_employees_male"
+            order="2" priority="0" use="optional"
+            xlink:preferredLabel="http://www.xbrl.org/2003/role/terseLabel" 
+        />
+        <presentationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="concept_presentation_root"
+            xlink:to="concept_nr_employees_female"
+            order="3" priority="0" use="optional"
+            xlink:preferredLabel="http://www.xbrl.org/2003/role/terseLabel" 
+        />
+    </presentationLink>
+</linkbase>

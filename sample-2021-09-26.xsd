@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+    targetNamespace="http://www.sample.com/2021-09-26"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:s="http://www.sample.com/2021-09-26">
+    <import
+        namespace="http://www.xbrl.org/2003/instance"
+        schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+    <element
+        id="sample_nr_employees_total"
+        name="nr_employees_total"
+        xbrli:periodType="instant"
+        type="xbrli:nonNegativeIntegerItemType"
+        substitutionGroup="xbrli:item"
+        nillable="true" />
+    <element
+        id="sample_nr_employees_male"
+        name="nr_employees_male"
+        xbrli:periodType="instant"
+        type="xbrli:nonNegativeIntegerItemType"
+        substitutionGroup="xbrli:item"
+        nillable="true" />
+    <element
+        id="sample_nr_employees_female"
+        name="nr_employees_female"
+        xbrli:periodType="instant"
+        type="xbrli:nonNegativeIntegerItemType"
+        substitutionGroup="xbrli:item"
+        nillable="true" />
+    <element
+        id="sample_presentation_root"
+        name="presentation_root"
+        xbrli:periodType="instant"
+        type="xbrli:stringItemType"
+        substitutionGroup="xbrli:item"
+        abstract="true"
+        nillable="true" />
+    <annotation>
+        <appinfo>
+            <link:linkbaseRef
+                xlink:type="simple"
+                xlink:href="sample-2021-09-26-label.xml"
+                xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+                xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+            <link:linkbaseRef
+                xlink:type="simple"
+                xlink:href="sample-2021-09-26-presentation.xml"
+                xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+                xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+        </appinfo>
+    </annotation>
+</schema>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linkbase
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance"
+    xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:label="http://xbrl.org/2008/label" 
+>
+    <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_presentation_root"
+            xlink:label="sample_presentation_root" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_total"
+            xlink:label="sample_nr_employees_total" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_male"
+            xlink:label="sample_nr_employees_male" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_female"
+            xlink:label="sample_nr_employees_female" />
+
+        <label
+            xlink:type="resource" 
+            xlink:label="sample_presentation_root_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">Employees</label>
+        <label
+            xlink:type="resource" 
+            xlink:label="sample_nr_employees_total_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">Total number employees</label>
+        <label 
+            xlink:type="resource" 
+            xlink:label="sample_nr_employees_male_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">Male</label>
+        <label 
+            xlink:type="resource" 
+            xlink:label="sample_nr_employees_female_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">Female</label>
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_presentation_root" 
+            xlink:to="sample_presentation_root_link" />
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_nr_employees_total" 
+            xlink:to="sample_nr_employees_total_link" />
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_nr_employees_male" 
+            xlink:to="sample_nr_employees_male_link" />
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_nr_employees_female" 
+            xlink:to="sample_nr_employees_female_link" />
+    </labelLink>
+</linkbase>
