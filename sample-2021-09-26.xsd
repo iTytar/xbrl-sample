@@ -10,6 +10,14 @@
         namespace="http://www.xbrl.org/2003/instance"
         schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
     <element
+        id="sample_presentation_root"
+        name="presentation_root"
+        xbrli:periodType="instant"
+        type="xbrli:stringItemType"
+        substitutionGroup="xbrli:item"
+        abstract="true"
+        nillable="true" />
+    <element
         id="sample_nr_employees_total"
         name="nr_employees_total"
         xbrli:periodType="instant"
@@ -31,12 +39,25 @@
         substitutionGroup="xbrli:item"
         nillable="true" />
     <element
-        id="sample_presentation_root"
-        name="presentation_root"
+        id="sample_nr_employees_age_up_to_20"
+        name="nr_employees_age_up_to_20"
         xbrli:periodType="instant"
-        type="xbrli:stringItemType"
+        type="xbrli:nonNegativeIntegerItemType"
         substitutionGroup="xbrli:item"
-        abstract="true"
+        nillable="true" />
+    <element
+        id="sample_nr_employees_age_21_to_40"
+        name="nr_employees_age_21_to_40"
+        xbrli:periodType="instant"
+        type="xbrli:nonNegativeIntegerItemType"
+        substitutionGroup="xbrli:item"
+        nillable="true" />
+    <element
+        id="sample_nr_employees_age_41_and_up"
+        name="nr_employees_age_41_and_up"
+        xbrli:periodType="instant"
+        type="xbrli:nonNegativeIntegerItemType"
+        substitutionGroup="xbrli:item"
         nillable="true" />
     <annotation>
         <appinfo>

@@ -57,4 +57,29 @@
         contextRef="c_end"
         unitRef="u_person"
         decimals="0">15</s:nr_employees_female>
+    <!-- Возрастные группы -->
+    <s:nr_employees_age_up_to_20
+        contextRef="c_start"
+        unitRef="u_person"
+        decimals="0">5</s:nr_employees_age_up_to_20>
+    <s:nr_employees_age_up_to_20
+        contextRef="c_end"
+        unitRef="u_person"
+        decimals="0">9</s:nr_employees_age_up_to_20>
+    <s:nr_employees_age_21_to_40
+        contextRef="c_start"
+        unitRef="u_person"
+        decimals="0">23</s:nr_employees_age_21_to_40>
+    <s:nr_employees_age_21_to_40
+        contextRef="c_end"
+        unitRef="u_person"
+        decimals="0">21</s:nr_employees_age_21_to_40>
+    <s:nr_employees_age_41_and_up
+        contextRef="c_start"
+        unitRef="u_person"
+        decimals="0">7</s:nr_employees_age_41_and_up>
+    <s:nr_employees_age_41_and_up
+        contextRef="c_end"
+        unitRef="u_person"
+        decimals="0">11</s:nr_employees_age_41_and_up>        
 </xbrl>

@@ -26,6 +26,18 @@
             xlink:type="locator"
             xlink:href="sample-2021-09-26.xsd#sample_nr_employees_female"
             xlink:label="sample_nr_employees_female" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_age_up_to_20"
+            xlink:label="sample_nr_employees_age_up_to_20" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_age_21_to_40"
+            xlink:label="sample_nr_employees_age_21_to_40" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_age_41_and_up"
+            xlink:label="sample_nr_employees_age_41_and_up" />
 
         <label
             xlink:type="resource" 
@@ -47,6 +59,23 @@
             xlink:label="sample_nr_employees_female_link"
             xlink:role="http://www.xbrl.org/2003/role/label"
             xml:lang="en">Female</label>
+        <label 
+            xlink:type="resource" 
+            xlink:label="sample_nr_employees_age_up_to_20_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">.. - 20</label>
+        <label 
+            xlink:type="resource" 
+            xlink:label="sample_nr_employees_age_21_to_40_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">21 - 40</label>
+        <label 
+            xlink:type="resource" 
+            xlink:label="sample_nr_employees_age_41_and_up_link"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xml:lang="en">41 - ..</label>
+
+
         <labelArc 
             xlink:type="arc" 
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
@@ -67,5 +96,20 @@
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
             xlink:from="sample_nr_employees_female" 
             xlink:to="sample_nr_employees_female_link" />
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_nr_employees_age_up_to_20" 
+            xlink:to="sample_nr_employees_age_up_to_20_link" />
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_nr_employees_age_21_to_40" 
+            xlink:to="sample_nr_employees_age_21_to_40_link" />
+        <labelArc 
+            xlink:type="arc" 
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" 
+            xlink:from="sample_nr_employees_age_41_and_up" 
+            xlink:to="sample_nr_employees_age_41_and_up_link" />
     </labelLink>
 </linkbase>
