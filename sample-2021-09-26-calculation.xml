@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance"
+    xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+>
+    <roleRef
+        xlink:type="simple"
+        xlink:href="sample-2021-09-26.xsd#genderDemographics"
+        roleURI="http://www.sample.com/genderDemographics" />
+    <roleRef
+        xlink:type="simple"
+        xlink:href="sample-2021-09-26.xsd#ageDemographics"
+        roleURI="http://www.sample.com/ageDemographics" />
+    <calculationLink
+        xlink:type="extended"
+        xlink:role="http://www.sample.com/genderDemographics" >
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_total"
+            xlink:label="concept_nr_employees_total" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_male"
+            xlink:label="concept_nr_employees_male" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_female"
+            xlink:label="concept_nr_employees_female" />
+
+        <calculationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+            xlink:from="concept_nr_employees_total"
+            xlink:to="concept_nr_employees_male"
+            weight="1.0"
+            order="1" />
+        <calculationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+            xlink:from="concept_nr_employees_total"
+            xlink:to="concept_nr_employees_female"
+            weight="1.0"
+            order="2" />
+
+    </calculationLink>
+    <calculationLink
+        xlink:type="extended"
+        xlink:role="http://www.sample.com/ageDemographics" >
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_total"
+            xlink:label="concept_nr_employees_total" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_age_up_to_20"
+            xlink:label="concept_nr_employees_age_up_to_20" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_age_21_to_40"
+            xlink:label="concept_nr_employees_age_21_to_40" />
+        <loc
+            xlink:type="locator"
+            xlink:href="sample-2021-09-26.xsd#sample_nr_employees_age_41_and_up"
+            xlink:label="concept_nr_employees_age_41_and_up" />
+        <calculationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+            xlink:from="concept_nr_employees_total"
+            xlink:to="concept_nr_employees_age_up_to_20"
+            weight="1.0"
+            order="1" />
+        <calculationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+            xlink:from="concept_nr_employees_total"
+            xlink:to="concept_nr_employees_age_21_to_40"
+            weight="1.0"
+            order="2" />
+        <calculationArc
+            xlink:type="arc"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+            xlink:from="concept_nr_employees_total"
+            xlink:to="concept_nr_employees_age_41_and_up"
+            weight="1.0"
+            order="3" />
+    </calculationLink>
+    
+</linkbase>

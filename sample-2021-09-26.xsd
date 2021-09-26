@@ -96,6 +96,11 @@
                 xlink:href="sample-2021-09-26-presentation.xml"
                 xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
                 xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+            <link:linkbaseRef
+                xlink:type="simple"
+                xlink:href="sample-2021-09-26-calculation.xml"
+                xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+                xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
             <link:roleType roleURI="http://www.sample.com/totalEmployees" id="totalEmployees">
                 <link:definition>Total number of employees</link:definition>
                 <link:usedOn>link:presentationLink</link:usedOn>
@@ -103,10 +108,12 @@
             <link:roleType roleURI="http://www.sample.com/genderDemographics" id="genderDemographics">
                 <link:definition>Gender related demographics on employees</link:definition>
                 <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
             </link:roleType>
             <link:roleType roleURI="http://www.sample.com/ageDemographics" id="ageDemographics">
                 <link:definition>Age related demographics on employees</link:definition>
                 <link:usedOn>link:presentationLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
             </link:roleType>
         </appinfo>
     </annotation>
