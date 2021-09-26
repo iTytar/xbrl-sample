@@ -1,0 +1,2 @@
+# xbrl-sample
+XBRL Sample
